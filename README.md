@@ -1,26 +1,23 @@
 <p align="center">
-  <h1 align="center">ROS 2 Deep Learning Package for Robot Movement</h1>
+  <h1 align="center">ROS 2 Package for Robot Movement</h1>
 </p>
 
-ROS 2 Package to Publish Twist Message from Subscribed Sensor Image Message using End to End Learning (Deep Learning) Method for Robot Movement.
+ROS 2 Package to Move Jetbot from Geometry Twist Message.
 
 ## Colaborators
-[Computer Fusion Laboratory (CFL) - Temple University College of Engineering](https://sites.temple.edu/cflab/people/)
-* [Animesh Bala Ani](https://animeshani.com/)
-* [Dr. Li Bai](https://engineering.temple.edu/about/faculty-staff/li-bai-lbai)
+[Animesh Bala Ani](https://www.linkedin.com/in/ani717/)
 
 ## Download Package
 Download package in a ROS workspace.
 ```
-git clone https://github.com/ANI717/ros2_deeplearn_twist
+git clone https://github.com/ANI717/ros2-twist-to-jetbot-motion
 ```
 
 ## Install Dependency
-Install Torch, Torchvision and Opencv.
+Install `Adafruit-SSD1306` and `Adafruit_MotorHat`.
 ```
-python3 -m pip install torch
-python3 -m pip install torchvision
-python3 -m pip install opencv-python
+python3 -m pip install Adafruit-SSD1306
+python3 -m pip install Adafruit_MotorHat
 ```
 Install ROS2 dependency.
 ```
