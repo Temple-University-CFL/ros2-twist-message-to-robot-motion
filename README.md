@@ -8,7 +8,7 @@ ROS 2 Package to Move Jetbot from Geometry Twist Message.
 [Animesh Bala Ani](https://www.linkedin.com/in/ani717/)
 
 ## Download Package
-Download package in a ROS workspace.
+Download package in a ROS2 workspace.
 ```
 git clone https://github.com/ANI717/ros2-twist-to-jetbot-motion
 ```
