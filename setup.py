@@ -16,7 +16,7 @@ setup(
     zip_safe=True,
     maintainer='ANI717',
     maintainer_email='animesh.ani@live.com',
-    description='ROS2 Package to run Jetbot subscribed to Geometry TWIST message',
+    description='ROS2 Package to run Jetbot subscribed to geometry Twist message',
     license='MIT License',
     tests_require=['pytest'],
     entry_points={
