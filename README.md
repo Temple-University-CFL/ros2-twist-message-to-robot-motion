@@ -19,6 +19,10 @@ Download package in a ROS2 workspace.
 ```
 git clone https://github.com/ANI717/ros2-twist-to-jetbot-motion
 ```
+Or update `.rosinstall` file with following command and run `rosws update` to clone this repository
+```
+- git: {local-name: src/deps/ros2-twist-to-jetbot-motion, uri: 'https://github.com/ANI717/ros2-twist-to-jetbot-motion.git', version: main}
+```
 
 ## Install Dependency <a name="install"></a>
 Install `traitlets`, `multiexit`, `Adafruit-SSD1306` and `Adafruit_MotorHat`.
