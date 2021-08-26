@@ -3,7 +3,7 @@
 
 """ROS2 Twist to Jetbot Move.
 
-This script subscribes to "/cmd_vel" topic, reads TWIST message, and moves the
+This script subscribes to "/cmd_vel" topic, reads Twist message, and moves the
 Jetbot.
 
 Revision History:
