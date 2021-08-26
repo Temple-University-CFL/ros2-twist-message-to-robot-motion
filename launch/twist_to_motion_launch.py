@@ -3,52 +3,45 @@
 
 """ROS2 Deeplearn Twist Launch Script.
 
-This script launches "cam2image" node from "image_tools" package and "execute" 
-node from "ros2_deeplearn_twist" package.
+This script moves Jetbot.
 
 Revision History:
-        2021-04-01 (Animesh): Baseline Software.
+        2021-08-26 (Animesh): Baseline Software.
 
 Example:
-        $ ros2 launch ros2_deeplearn_twist deeplearn_twist.launch.py 
+        $ colcon build && source install/setup.bash && ros2 launch ros2_twist_to_jetbot_motion twist_to_motion_launch.py
+        $ source install/setup.bash && ros2 launch ros2_twist_to_jetbot_motion twist_to_motion_launch.py
+        $ ros2 launch ros2_twist_to_jetbot_motion twist_to_motion_launch.py
 
 """
 
 
 #___Import Modules:
-import launch
-import launch_ros.actions
+import os
+
+from ament_index_python.packages import get_package_share_directory
+
+from launch import LaunchDescription
+from launch.actions import IncludeLaunchDescription
+from launch.launch_description_sources import PythonLaunchDescriptionSource
+from launch_ros.actions import Node
 
 
-#___Functions
+#___Function:
 def generate_launch_description():
-    """Launch Description Generating Function
     
-    This function launches peoper nodes from proper packages.
-    
-    """
+    execute_cmd = Node(
+        package = 'ros2_twist_to_jetbot_motion',
+        node_executable = 'execute')
 
-    ld = launch.LaunchDescription([
-        launch.actions.DeclareLaunchArgument(
-            'use_sim_time',
-            default_value='true',
-            description='Use sim time if true. Default: true'),
-
-        # nodes to launch
-            
-        launch_ros.actions.Node(
-            package='ros2_deeplearn_twist',
-            node_executable='execute',
-            name='deeplearn_twist'
-        ),
+        
+    # Create the launch description and populate
+    ld = LaunchDescription()
     
-    ])    
+    # Add all actions
+    ld.add_action(execute_cmd)
+        
     return ld
-
-
-#___Driver Program: 
-if __name__ == '__main__':  
-    generate_launch_description()
 
 
 #                                                                              
