@@ -40,4 +40,4 @@ colcon build && . install/setup.bash && ros2 launch ros2_twist_to_jetbot_motion 
 ```
 
 ## Calibration
-Modify `XCAL` and `ZCAL` values from `ros2_twist_to_jetbot_motion/twist_to_motion_function` script.
+Modify `XCAL` and `ZCAL` values from `ros2_twist_to_jetbot_motion/twist_to_motion_function.py` script.
