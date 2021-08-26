@@ -28,15 +28,15 @@ rosdep install --from-paths src --ignore-src -r -y
 ```
 
 ## Build, Source & Run Package
-ros2 run ros2_deeplearn_twist execute
+Executable node name `execute`.
 ```
-colcon build && . install/setup.bash && ros2 run ros2_twist_to_jetbot_motion execute
+colcon build && source install/setup.bash && ros2 run ros2_twist_to_jetbot_motion execute
 ```
 
 ## Launch Package
 ```
 ros2 launch ros2_twist_to_jetbot_motion twist_to_motion_launch.py
-colcon build && . install/setup.bash && ros2 launch ros2_twist_to_jetbot_motion twist_to_motion_launch.py
+colcon build && source install/setup.bash && ros2 launch ros2_twist_to_jetbot_motion twist_to_motion_launch.py
 ```
 
 ## Calibration
