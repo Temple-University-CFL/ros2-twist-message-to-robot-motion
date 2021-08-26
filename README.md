@@ -34,8 +34,8 @@ colcon build && . install/setup.bash && ros2 run ros2_twist_to_jetbot_motion exe
 ```
 
 ## Launch Package
-ros2 launch ros2_twist_to_jetbot_motion twist_to_motion_launch.py
 ```
+ros2 launch ros2_twist_to_jetbot_motion twist_to_motion_launch.py
 colcon build && . install/setup.bash && ros2 launch ros2_twist_to_jetbot_motion twist_to_motion_launch.py
 ```
 
