@@ -10,6 +10,8 @@ Revision History:
         2021-08-18 (Animesh): Baseline Software.
 
 Example:
+        $ colcon build && source install/setup.bash && ros2 run ros2_twist_to_jetbot_motion execute
+        $ source install/setup.bash && ros2 run ros2_twist_to_jetbot_motion execute
         $ ros2 run ros2_twist_to_jetbot_motion execute
 
 """
@@ -34,7 +36,7 @@ ZCAL = 0.25 #Calibration Z
 
 
 #__Classes
-class Twist_to_Move(Node):
+class Twist_to_Motion(Node):
     """TWIST to Jetbot Move Class.
     
     This class contains all methods to read TWIST message and move the Jetbot. 
@@ -43,7 +45,7 @@ class Twist_to_Move(Node):
 
     def __init__(self):
         
-        super().__init__('twist_to_move')
+        super().__init__('twist_to_motion')
         
         # initialize robot
         self.robot = Robot()
@@ -201,14 +203,14 @@ class Robot(SingletonConfigurable):
 def main(args=None):
     rclpy.init(args=args)
 
-    twist_to_move = Twist_to_Move()
+    twist_to_motion = Twist_to_Motion()
 
-    rclpy.spin(twist_to_move)
+    rclpy.spin(twist_to_motion)
 
     # Destroy the node explicitly
     # (optional - otherwise it will be done automatically
     # when the garbage collector destroys the node object)
-    twist_to_move.destroy_node()
+    twist_to_motion.destroy_node()
     rclpy.shutdown()
 
 
