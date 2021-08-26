@@ -1,7 +1,6 @@
 from setuptools import setup, find_packages
-from glob import glob
 
-PACKAGE_NAME = 'ros2-twist-to-jetbot-motion'
+PACKAGE_NAME = 'ros2_twist_to_jetbot_motion'
 
 setup(
     name=PACKAGE_NAME,
@@ -22,7 +21,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'execute = ros2-twist-to-jetbot-motion.twist_to_motion:main',
+            'execute = ros2_twist_to_jetbot_motion.twist_to_motion_function:main',
         ],
     },
 )

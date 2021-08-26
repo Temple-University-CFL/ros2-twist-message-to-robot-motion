@@ -10,7 +10,7 @@ Revision History:
         2021-08-18 (Animesh): Baseline Software.
 
 Example:
-        $ ros2 run ros2-twist-to-jetbot-motion execute
+        $ ros2 run ros2_twist_to_jetbot_motion execute
 
 """
 
