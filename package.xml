@@ -3,7 +3,7 @@
 <package format="3">
   <name>ros2_twist_to_jetbot_motion</name>
   <version>0.0.0</version>
-  <description>ROS2 Package to run Jetbot subscribed to Geometry TWIST message</description>
+  <description>ROS2 Package to run Jetbot subscribed to geometry Twist message</description>
   <maintainer email="animesh.ani@live.com">ANI717</maintainer>
   <license>MIT License</license>
 
