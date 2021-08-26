@@ -1,8 +1,8 @@
 <p align="center">
-  <h1 align="center">ROS 2 Package for Robot Movement</h1>
+  <h1 align="center">Generalized ROS 2 Package for Robot Movement</h1>
 </p>
 
-ROS 2 Package to Move Jetbot or any Adafruit_MotorHat driven Robot Car. Steering and Speed control instructions are acquired from ROS2 Geometry Twist Message, published in `/cmd_vel` topic.
+A Generalized ROS 2 Package to Move `Jetbot` or any `Adafruit MotorHat` driven Robot Car. The Package subscribes to `/cmd_vel` topic, to acquire steering and speed control instreuctions as geometry Twist message format.
 
 ## Colaborators
 [Animesh Bala Ani](https://www.linkedin.com/in/ani717/)
