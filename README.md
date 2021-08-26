@@ -7,14 +7,21 @@ A Generalized ROS 2 Package to Move `Jetbot` or any `Adafruit MotorHat` driven R
 ## Colaborators
 [Animesh Bala Ani](https://www.linkedin.com/in/ani717/)
 
-## Download Package
+## Table of Contents 
+* [Download Package](#download) <br/>
+* [Install Dependency](#install) <br/>
+* [Build, Source & Run Package](#run) <br/>
+* [Launch Package](#launch) <br/>
+* [Calibration](#calibration) <br/>
+
+## Download Package <a name="download"></a>
 Download package in a ROS2 workspace.
 ```
 git clone https://github.com/ANI717/ros2-twist-to-jetbot-motion
 ```
 
-## Install Dependency
-Install `Adafruit-SSD1306` and `Adafruit_MotorHat`.
+## Install Dependency <a name="install"></a>
+Install `traitlets`, `multiexit`, `Adafruit-SSD1306` and `Adafruit_MotorHat`.
 ```
 python3 -m pip install Adafruit-SSD1306
 python3 -m pip install Adafruit_MotorHat
@@ -27,7 +34,7 @@ rosdep update
 rosdep install --from-paths src --ignore-src -r -y
 ```
 
-## Build, Source & Run Package
+## Build, Source & Run Package <a name="run"></a>
 ```
 colcon build
 source install/setup.bash
@@ -35,10 +42,10 @@ ros2 run ros2_twist_to_jetbot_motion execute
 ```
 Contains one executable node named `execute`.
 
-## Launch Package
+## Launch Package <a name="launch"></a>
 ```
 ros2 launch ros2_twist_to_jetbot_motion twist_to_motion_launch.py
 ```
 
-## Calibration
+## Calibration <a name="calibration"></a>
 Modify `XCAL` and `ZCAL` values from `ros2_twist_to_jetbot_motion/twist_to_motion_function.py` script.
