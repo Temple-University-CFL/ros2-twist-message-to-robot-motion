@@ -10,9 +10,9 @@ Revision History:
         2021-08-18 (Animesh): Baseline Software.
 
 Example:
-        $ colcon build && source install/setup.bash && ros2 run ros2_twist_to_jetbot_motion execute
-        $ source install/setup.bash && ros2 run ros2_twist_to_jetbot_motion execute
-        $ ros2 run ros2_twist_to_jetbot_motion execute
+        $ colcon build && source install/setup.bash && ros2 run ros2_twist_message_to_robot_motion execute
+        $ source install/setup.bash && ros2 run ros2_twist_message_to_robot_motion execute
+        $ ros2 run ros2_twist_message_to_robot_motion execute
 
 """
 

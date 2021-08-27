@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-PACKAGE_NAME = 'ros2_twist_to_jetbot_motion'
+PACKAGE_NAME = 'ros2_twist_message_to_robot_motion'
 
 setup(
     name=PACKAGE_NAME,
@@ -10,7 +10,7 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + PACKAGE_NAME]),
         ('share/' + PACKAGE_NAME, ['package.xml']),
-        ('share/' + PACKAGE_NAME + '/launch', ['launch/twist_to_motion_launch.py'])
+        ('share/' + PACKAGE_NAME + '/launch', ['launch/launch.py'])
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -21,7 +21,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'execute = ros2_twist_to_jetbot_motion.twist_to_motion_function:main',
+            'execute = ros2_twist_message_to_robot_motion.adafruit_motion:main',
         ],
     },
 )
