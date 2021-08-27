@@ -31,7 +31,7 @@ from launch_ros.actions import Node
 def generate_launch_description():
     
     execute_cmd = Node(
-        package = 'ros2_twist_to_jetbot_motion',
+        package = 'ros2_twist_message_to_robot_motion',
         node_executable = 'execute')
 
         
