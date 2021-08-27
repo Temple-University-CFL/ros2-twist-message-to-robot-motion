@@ -9,7 +9,7 @@ A generalized ROS2 package to move `Nvidia Jetbot` or any `Adafruit MotorHat` dr
 
 ## Table of Contents
 * [Key Mapping](#key) <br/>
-* [Demo](#demo) <br/>
+* [Demonstration](#demo) <br/>
 * [Download Package](#download) <br/>
 * [Install Dependency](#install) <br/>
 * [Build, Source & Run Package](#run) <br/>
@@ -22,7 +22,7 @@ A generalized ROS2 package to move `Nvidia Jetbot` or any `Adafruit MotorHat` dr
 `+ angular.z`: `Right`<br/>
 `- angular.z`: `Left`<br/>
 
-## Demo <a name="demo"></a>
+## Demonstration <a name="demo"></a>
 Demonstration of robot movement.<br/>
 Direction: backward left.<br/>
 
