@@ -31,8 +31,7 @@ python3 -m pip install Adafruit-SSD1306, Adafruit_MotorHat, traitlets, multiexit
 ```
 Install ROS2 dependency.
 ```
-rosdep update
-rosdep install --from-paths src --ignore-src -r -y
+rosdep update && rosdep install --from-paths src --ignore-src -r -y
 ```
 
 ## Build, Source & Run Package <a name="run"></a>
