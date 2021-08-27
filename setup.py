@@ -21,7 +21,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'execute = ros2_twist_message_to_robot_motion.adafruit_motion:main',
+            'execute = ros2_twist_message_to_robot_motion.jetbot_motion:main',
         ],
     },
 )
