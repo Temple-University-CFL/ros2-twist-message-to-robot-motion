@@ -36,9 +36,7 @@ rosdep update && rosdep install --from-paths src --ignore-src -r -y
 
 ## Build, Source & Run Package <a name="run"></a>
 ```
-colcon build
-source install/setup.bash
-ros2 run ros2_twist_to_jetbot_motion execute
+colcon build && source install/setup.bash && ros2 run ros2_twist_to_jetbot_motion execute
 ```
 Contains one executable node named `execute`.
 
