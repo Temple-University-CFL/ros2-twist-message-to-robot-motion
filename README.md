@@ -60,4 +60,4 @@ ros2 launch ros2_twist_message_to_robot_motion launch.py
 ```
 
 ## Calibration <a name="calibration"></a>
-Modify `XCAL` and `ZCAL` values from `ros2_twist_message_to_robot_motion/jetbot_motion.py` or `ros2_twist_message_to_robot_motion/adafruit_motion.py` script.
+Modify `XCAL` and `ZCAL` from `ros2_twist_message_to_robot_motion/jetbot_motion.py` or `ros2_twist_message_to_robot_motion/adafruit_motion.py` script.
