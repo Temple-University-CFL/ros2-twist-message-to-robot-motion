@@ -17,11 +17,11 @@ A Generalized ROS 2 Package to Move `Nvidia Jetbot` or any `Adafruit MotorHat` d
 ## Download Package <a name="download"></a>
 Download package in a ROS2 workspace.
 ```
-git clone https://github.com/ANI717/ros2-twist-to-jetbot-motion
+git clone https://github.com/ANI717/ros2-twist-message-to-robot-motion
 ```
 Or update `.rosinstall` file with following command and run `rosws update` to clone this repository
 ```
-- git: {local-name: src/deps/ros2-twist-to-jetbot-motion, uri: 'https://github.com/ANI717/ros2-twist-to-jetbot-motion.git', version: main}
+- git: {local-name: src/deps/ros2-twist-message-to-robot-motion, uri: 'https://github.com/ANI717/ros2-twist-message-to-robot-motion.git', version: main}
 ```
 
 ## Install Dependency <a name="install"></a>
@@ -36,14 +36,14 @@ rosdep update && rosdep install --from-paths src --ignore-src -r -y
 
 ## Build, Source & Run Package <a name="run"></a>
 ```
-colcon build && source install/setup.bash && ros2 run ros2_twist_to_jetbot_motion execute
+colcon build && source install/setup.bash && ros2 run ros2_twist_message_to_robot_motion execute
 ```
 Contains one executable node named `execute`.
 
 ## Launch Package <a name="launch"></a>
 ```
-ros2 launch ros2_twist_to_jetbot_motion twist_to_motion_launch.py
+ros2 launch ros2_twist_message_to_robot_motion launch.py
 ```
 
 ## Calibration <a name="calibration"></a>
-Modify `XCAL` and `ZCAL` values from `ros2_twist_to_jetbot_motion/twist_to_motion_function.py` script.
+Modify `XCAL` and `ZCAL` values from `ros2_twist_message_to_robot_motion/adafruit_motion.py` script.
