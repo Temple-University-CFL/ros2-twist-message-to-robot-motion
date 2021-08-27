@@ -13,6 +13,7 @@ A generalized ROS2 package to move `Nvidia Jetbot` or any `Adafruit MotorHat` dr
 * [Build, Source & Run Package](#run) <br/>
 * [Launch Package](#launch) <br/>
 * [Calibration](#calibration) <br/>
+* [Demo](#demo) <br/>
 
 ## Download Package <a name="download"></a>
 Download package in a ROS2 workspace.
@@ -48,5 +49,5 @@ ros2 launch ros2_twist_message_to_robot_motion launch.py
 ## Calibration <a name="calibration"></a>
 Modify `XCAL` and `ZCAL` values from `ros2_twist_message_to_robot_motion/adafruit_motion.py` script.
 
-## Demo
+## Demo <a name="demo"></a>
 <img src="https://github.com/ANI717/ani717_gif_repository/blob/main/ros2_twist_message_to_robot_motion/jetbot_motion.gif" alt="JupytarLab Interface" class="inline"/><br/>
