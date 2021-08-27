@@ -7,14 +7,26 @@ A generalized ROS2 package to move `Nvidia Jetbot` or any `Adafruit MotorHat` dr
 ## Colaborators
 [Animesh Bala Ani](https://www.linkedin.com/in/ani717/)
 
-## Table of Contents 
+## Table of Contents
+* [Key Mapping](#key) <br/>
+* [Demo](#demo) <br/>
 * [Download Package](#download) <br/>
 * [Install Dependency](#install) <br/>
 * [Build, Source & Run Package](#run) <br/>
 * [Launch Package](#launch) <br/>
 * [Calibration](#calibration) <br/>
-* [Key Mapping](#key) <br/>
-* [Demo](#demo) <br/>
+
+## Key Mapping <a name="key"></a>
+`+ linear.x` : `Forward`<br/>
+`- linear.x` : `Backward`<br/>
+`+ angular.z`: `Right`<br/>
+`- angular.z`: `Left`<br/>
+
+## Demo <a name="demo"></a>
+Demonstration of robot movement.<br/>
+Direction: backward left.<br/>
+
+<img src="https://github.com/ANI717/ani717_gif_repository/blob/main/ros2_twist_message_to_robot_motion/jetbot_motion.gif" alt="JupytarLab Interface" class="inline"/><br/>
 
 ## Download Package <a name="download"></a>
 Download package in a ROS2 workspace.
@@ -49,15 +61,3 @@ ros2 launch ros2_twist_message_to_robot_motion launch.py
 
 ## Calibration <a name="calibration"></a>
 Modify `XCAL` and `ZCAL` values from `ros2_twist_message_to_robot_motion/adafruit_motion.py` script.
-
-## Key Mapping <a name="key"></a>
-`+ linear.x` : `Forward`<br/>
-`- linear.x` : `Backward`<br/>
-`+ angular.z`: `Right`<br/>
-`- angular.z`: `Left`<br/>
-
-## Demo <a name="demo"></a>
-Demonstration of robot movement.<br/>
-Direction: backward left.<br/>
-
-<img src="https://github.com/ANI717/ani717_gif_repository/blob/main/ros2_twist_message_to_robot_motion/jetbot_motion.gif" alt="JupytarLab Interface" class="inline"/><br/>
