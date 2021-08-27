@@ -50,6 +50,7 @@ ros2 launch ros2_twist_message_to_robot_motion launch.py
 Modify `XCAL` and `ZCAL` values from `ros2_twist_message_to_robot_motion/adafruit_motion.py` script.
 
 ## Demo <a name="demo"></a>
-Demonstration of backward-left movement.<br/>
+Demonstration of robot movement.<br/>
+Direction: backward left.<br/>
 
 <img src="https://github.com/ANI717/ani717_gif_repository/blob/main/ros2_twist_message_to_robot_motion/jetbot_motion.gif" alt="JupytarLab Interface" class="inline"/><br/>
