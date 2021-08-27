@@ -2,7 +2,7 @@
   <h1 align="center">Generalized ROS 2 Package for Robot Movement</h1>
 </p>
 
-A generalized ROS2 package to move `Nvidia Jetbot` or any `Adafruit MotorHat` driven robot. The package subscribes to `/cmd_vel` topic, to acquire steering and speed control instreuctions as `geometry Twist` message format.
+A generalized ROS2 package to move `Nvidia Jetbot` or any `Adafruit MotorHat` driven robot. The package subscribes to `/cmd_vel` topic, to acquire steering and speed control instreuctions as `geometry_msgs/Twist.msg` message format.
 
 ## Colaborators
 [Animesh Bala Ani](https://www.linkedin.com/in/ani717/)
