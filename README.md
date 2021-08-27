@@ -27,7 +27,10 @@ Or update `.rosinstall` file with following command and run `rosws update` to cl
 ## Install Dependency <a name="install"></a>
 Install `traitlets`, `multiexit`, `Adafruit-SSD1306` and `Adafruit_MotorHat`.
 ```
-python3 -m pip install Adafruit-SSD1306, Adafruit_MotorHat, traitlets, multiexit
+python3 -m pip install Adafruit-SSD1306
+python3 -m pip install Adafruit_MotorHat
+python3 -m pip install traitlets
+python3 -m pip install multiexit
 ```
 Install ROS2 dependency.
 ```
