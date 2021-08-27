@@ -49,6 +49,12 @@ ros2 launch ros2_twist_message_to_robot_motion launch.py
 ## Calibration <a name="calibration"></a>
 Modify `XCAL` and `ZCAL` values from `ros2_twist_message_to_robot_motion/adafruit_motion.py` script.
 
+## Key Mapping <a name="key"></a>
+`+ linear.x` : `Forward`
+`- linear.x` : `Backward`
+`+ angular.z`: `Right`
+`- angular.z`: `Left`
+
 ## Demo <a name="demo"></a>
 Demonstration of robot movement.<br/>
 Direction: backward left.<br/>
