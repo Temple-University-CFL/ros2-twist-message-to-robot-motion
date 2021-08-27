@@ -13,6 +13,7 @@ A generalized ROS2 package to move `Nvidia Jetbot` or any `Adafruit MotorHat` dr
 * [Build, Source & Run Package](#run) <br/>
 * [Launch Package](#launch) <br/>
 * [Calibration](#calibration) <br/>
+* [Key Mapping](#key) <br/>
 * [Demo](#demo) <br/>
 
 ## Download Package <a name="download"></a>
